@@ -1,4 +1,6 @@
-# OIAK_project
+#         OIAK_project
+# Badanie czasów dostępu do pamięci DDR4
+### Prowadzący: Dr inż. Tadeusz Tomczak
 ###
 Marcin Waloch   241274
 ###
