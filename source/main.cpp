@@ -168,7 +168,7 @@ double chase_pointers(void** buffer, unsigned long long count)
 }
 
 
-//W³aœciwa funkcja pomiarowa wykorzystuj¹ca procedurê rdtscp
+//WÂ³aÅ“ciwa funkcja pomiarowa wykorzystujÂ¹ca procedurÃª rdtscp
 volatile double chase_pointers_rdtsc(void** buffer, unsigned long long count, int distance)
 {
 	void** p = (void**)buffer;
@@ -193,7 +193,7 @@ volatile double chase_pointers_rdtsc(void** buffer, unsigned long long count, in
 			RBX/EBX
 			RBP/EBP
 
-	W poni¿szym ci¹gu instrukcji modyfikowane s¹ wy³¹cznie rejestry:
+	W poniÂ¿szym ciÂ¹gu instrukcji modyfikowane sÂ¹ wyÂ³Â¹cznie rejestry:
 			EAX,EDX i ECX	przez instrukcje rdtscp
 			EDI				jako miejsce przechowywania adresu pamieci
 	*/
@@ -215,7 +215,7 @@ volatile double chase_pointers_rdtsc(void** buffer, unsigned long long count, in
 	return t2 - t1;
 }
 
-//Funkcja testuje czasy dostêpu do wskaznikow losowo polaczonych na wskazanym obszarze
+//Funkcja testuje czasy dostÃªpu do wskaznikow losowo polaczonych na wskazanym obszarze
 volatile void random_chase_benchmark()
 {
 	ofstream file;
@@ -279,7 +279,7 @@ volatile void linear_chase_benchmark()
 }
 
 
-//Funkcja bada czasy dostêpu przy zmianie struktur pamiêci okreœlonych dan¹ odleg³oœci¹ i zapisuje wyniki do plikow
+//Funkcja bada czasy dostÃªpu przy zmianie struktur pamiÃªci okreÅ“lonych danÂ¹ odlegÂ³oÅ“ciÂ¹ i zapisuje wyniki do plikow
 void test_distances_to_file(int n)
 {
 	unsigned long long test_size;
@@ -316,7 +316,7 @@ void test_distances_to_file(int n)
 
 }
 
-//Funkcja wczytuj¹ca zadane odleg³osci z pliku 'rozmiary.txt'
+//Funkcja wczytujÂ¹ca zadane odlegÂ³osci z pliku 'rozmiary.txt'
 void read_size()
 {
 	ifstream file;
